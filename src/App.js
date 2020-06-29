@@ -1,5 +1,4 @@
 import React from 'react';
-import Teacher from './components/Teacher';
 import Title from './components/Title';
 import Pokemon from './components/Pokemon/Pokemon';
 
