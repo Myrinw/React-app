@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Title from './components/Title';
 import Pokemon from './components/Pokemon/Pokemon';
+import LikeCounter from './components/LikeCounterj';
+import Animals from './components/AwesomeAnimals';
+import ArticleCard from './components/ArticleCard';
+import ArticleList from './components/ArticleLists';
 
 const all_pokemon = [
   {
@@ -36,8 +40,14 @@ const all_pokemon = [
 
 
 function App() {
+  const answerArray = useState('yes');
+
   return (
     <div className="App container">
+      <Title content="Some Simple Title" />
+      <LikeCounter />
+      <Animals />
+      <ArticleList />
       <main>
         <Title content="Example title" />
         <div className="row">
